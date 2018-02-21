@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+
+ {% block body %}
+
+     <div class="container">
+         <div class="row">
+             <div class="col">
+
+                 <h1>Liste des jeux en cours</h1>
+
+             </div>
+         </div>
+     </div>
+
+
+
+<div class="row">
+
+    <div class="col-8 mx-auto">
+
+
+     <table class="table table-striped">
+         <thead>
+         <tr>
+             <th scope="col">ID</th>
+             <th scope="col">Nom</th>
+             <th scope="col">Action</th>
+         </tr>
+         </thead>
+         <tbody>
+
+
+         {% for item in list %}
+
+             <tr>
+                 <th scope="row">{{ item.id|e }}</th>
+                 <td>Story N° {{ item.id|e }}</td>
+                 <td><a href="/game/{{ item.id|e }}"><span class="btn btn-primary"> Entrez dans ce monde</span></a></td>
+             </tr>
+
+         {% endfor %}
+
+
+
+         </tbody>
+     </table>
+
+
+    </div>
+</div>
+
+
+
+
+ {% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+ {% block slide %}
+ {% endblock %}
+
+
+ {% block body %}
+
+<div class="row">
+
+        <div class="col">
+            <h1>Interface de jeu Alpha</h1>
+        </div>
+</div>
+
+<div class="interface">
+
+          <div class=" story ">
+           <span class=""> {{ story | raw}}</span>
+          </div>
+
+
+
+    <div class="row">
+        <div class="form-game col-12">
+
+         {{ form_start(form) }}
+
+                 <div class="row">
+                     <div class="col-8 ">
+                         {{ form_label(form.question,'Question') }}
+                         {{ form_errors(form.question) }}
+                         {{ form_widget(form.question) }}
+                     </div>
+
+                     <div class="col-4 ">
+                         {{ form_label(form.diff, 'difficulté') }}
+                        {{ form_errors(form.diff) }}
+                        {{ form_widget(form.diff) }}
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-12 ">
+                        {{ form_label(form.action, 'Roleplay    ') }}
+                        {{ form_errors(form.action) }}
+                        {{ form_widget(form.action) }}
+                    </div>
+                 </div>
+
+         {{ form_end(form) }}
+     </div>
+     </div>
+
+</div>
+
+ {% endblock %}

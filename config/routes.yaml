@@ -1,0 +1,34 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+app_home:
+  path: /
+  controller: App\Controller\GameController::home
+
+app_explication:
+  path: /explications
+  controller: App\Controller\GameController::explications
+
+app_regles:
+  path: /regles
+  controller: App\Controller\GameController::regles
+
+
+app_game:
+  path: /game/{id}
+  controller: App\Controller\GameController::game
+  defaults:
+          id: 1
+  requirements:
+          id: '\d+'
+
+app_list_game:
+  path: /game/list
+  controller: App\Controller\GameController::page_list_roleplay
+
+
+app_test:
+  path: /test
+  controller: App\Controller\SujetController::count _sujet
+

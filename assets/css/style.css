@@ -1,0 +1,188 @@
+/*
+  Theme Name: Avilon
+  Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: #1dc8cd;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #1dc9ce;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kavivanar', cursive;
+  font-weight: 400;
+
+  margin: 50px 0 50px 0;
+  /*padding: 0;*/
+  color:#688DE9;
+}
+
+.carousel-inner h3{
+  color: #fff;
+}
+
+
+/*Home*/
+
+
+
+
+.parallax{  /* The image used */
+  background-image: url("/img/parallax.png");
+
+  /* Set a specific height */
+  height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax p{
+  color: #fff;
+  text-align: justify;
+  padding: 50px;
+}
+
+.picto{
+  margin: 30px 0 30px 0;
+  padding: 10px;
+  background-color: #29282E;
+
+}
+.picto p{
+  color:white;
+}
+.picto h2{
+  color:white;
+  text-align: center;
+}
+
+
+.call-to-action{
+  /*background-color: #0d3349;*/
+  padding-top: 75px;
+  margin: auto;
+
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #29282E ;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  margin-top: 20px;
+  color: #333;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+#footer p, #footer a{
+  color:white;
+}
+
+#footer .credits {
+  font-size: 13px;
+  color: #888;
+}
+
+#footer .footer-links a {
+  color: #666;
+  padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+  padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+  color: #1dc8cd;
+}
+
+
+
+/*Game*/
+.story{
+    background-color: rgba(128, 128, 128, 0.76);
+    border: 1px solid white;
+    padding: 15px;
+    height: 300px;
+    overflow: scroll;
+    margin:10px;
+    color:white;
+
+}
+
+
+#roleplay_question{
+  width: 85%;
+}
+
+.interface{
+
+  background-image: url("/img/img-jeu.jpg");
+    box-shadow: 0 -2px 5px grey;
+
+
+    /* Set a specific height */
+    /*padding: 10px;*/
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.interface form{
+    background-color: rgba(128, 128, 128, 0.76);
+    border: 1px solid white;
+
+    padding: 10px;
+    /*margin:10px;*/
+    color:white;
+
+}
+.interface input, .interface textarea{
+    background-color: white;
+    color: grey;
+
+
+}
+.interface label{
+    color: #fff;;
+
+}
+
+
+
+form{
+  width: 100%;
+}
