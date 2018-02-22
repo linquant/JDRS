@@ -27,6 +27,13 @@ app_list_game:
   path: /game/list
   controller: App\Controller\GameController::page_list_roleplay
 
+app_add_scenar:
+  path: /add/scenar/{type}
+  controller: App\Controller\AddscenarController::addscenar
+  defaults:
+          type: sujet
+
+
 
 app_test:
   path: /test

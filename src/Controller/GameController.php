@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\SujetController;
+use App\Entity\Action;
 use App\Repository\SujetRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -21,12 +22,7 @@ class GameController extends roleplayController
     public function Game(Request $request,$id)
     {
 
-//        Acceder au repo
-//        $repo = $this->getDoctrine()->getManager()->getRepository(Sujet::class);
-//
-//      $sujet= $repo->rand_sujet();
-
- //       print_r($sujet["sujet"]);
+    echo $this->random_scenario();
 
         //Initialise un nouveau jeu ou charge depuis un Id
         //ToDo sécuriser les acces à l'id
@@ -36,7 +32,7 @@ class GameController extends roleplayController
             $id = null;
 
             $roleplay = new Roleplay();
-            $roleplay->setStory('Nouvelle story');
+            $roleplay->setStory('Nouvelle story <br> '.$this->random_scenario());
 
 
         }else{
@@ -47,6 +43,7 @@ class GameController extends roleplayController
         }
 
 
+        //Génération du formulaire de jeu
 
         $form = $this->createForm(Roleplaytype::class, new Roleplay());
 
@@ -184,12 +181,22 @@ class GameController extends roleplayController
         return $list_twist[array_rand($list_twist, 1)];
     }
 
-    public function evenement_anodin(){
+    public function random_scenario(){
+
+        $scenario = "" ;
+
+//        Acceder au repo
+        $repo = $this->getDoctrine()->getManager()->getRepository(Sujet::class);
+        $sujet= $repo->rand_sujet();
+
+        $repo = $this->getDoctrine()->getManager()->getRepository(Action::class);
+        $action= $repo->rand_action();
 
 
+        $scenario ="Générateur d'idée de scénario : ". ucfirst((string)$sujet["sujet"])." - ".ucfirst((string)$action["action"]);
 
 
-
+        return $scenario;
     }
 
 }

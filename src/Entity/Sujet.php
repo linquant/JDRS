@@ -17,7 +17,7 @@ class Sujet
     private $id;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string", length=100)
      */
     private $sujet;
 

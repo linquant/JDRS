@@ -1,0 +1,51 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<h2>Liste des éléments de type : {{ type }}</h2>
+
+
+
+{% if list_keyword %}
+
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">{{ type }}</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for keyword in list_keyword %}
+
+
+            <tr>
+                <th scope="row">{{  loop.index}}</th>
+                <td>{{ keyword |capitalize }}</td>
+                <td>
+                    <i class="far fa-trash-alt"></i>
+                    <i class="fas fa-pen-square"></i>
+
+                </td>
+            </tr>
+        {% endfor %}
+
+
+     </tbody>
+    </table>
+
+
+{% endif %}
+
+
+<h2>Ajouter un item {{ type }} au générateur de scénario</h2>
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+
+{% endblock %}

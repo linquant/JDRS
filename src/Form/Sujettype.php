@@ -7,7 +7,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 
-class Actiontype  extends AbstractType
+class Sujettype  extends AbstractType
 {
 
 
