@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - jdrs@localhost" uuid="8f6d3c83-3371-4746-82a8-75fa8796f8b4">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>jdrs.*</schema-pattern>
+      <default-schemas>jdrs.*</default-schemas>
+    </data-source>
+  </component>
+</project>

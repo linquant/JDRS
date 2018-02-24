@@ -39,5 +39,11 @@ app_test:
   path: /test
   controller: App\Controller\SujetController::count _sujet
 
+
+## Gestion des users
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
 logout:
     path: /logout
