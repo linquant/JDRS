@@ -13,10 +13,10 @@ use Symfony\Component\HttpFoundation\Request;
 
 
 use App\Entity\Action;
-use App\Form\Actiontype;
+use App\Form\ActionType;
 
 use App\Entity\Sujet;
-use App\Form\Sujettype;
+use App\Form\SujetType;
 
 
 class AddscenarController extends Controller
@@ -60,7 +60,7 @@ class AddscenarController extends Controller
 
 
               // formulaire pour ajouter des sujets au générateur de scénar
-              $form = $this->createForm(Sujettype::class, new Sujet());
+              $form = $this->createForm(SujetType::class, new Sujet());
               $form->handleRequest($request);
 
               if ($form->isSubmitted() && $form->isValid()) {

@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use App\Entity\Roleplay;
 use App\Entity\Sujet;
 use App\Controller\RoleplayController;
-use App\Form\Roleplaytype;
+use App\Form\RoleplayType;
 
 use Symfony\Component\HttpFoundation\Request;
 
@@ -45,7 +45,7 @@ class GameController extends roleplayController
 
         //Génération du formulaire de jeu
 
-        $form = $this->createForm(Roleplaytype::class, new Roleplay());
+        $form = $this->createForm(RoleplayType::class, new Roleplay());
 
 
         $form->handleRequest($request);
