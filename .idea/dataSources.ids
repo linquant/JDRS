@@ -12,45 +12,92 @@
       <table id="3" parent="1" name="migration_versions"/>
       <table id="4" parent="1" name="roleplay"/>
       <table id="5" parent="1" name="sujet"/>
-      <column id="6" parent="2" name="id">
+      <table id="6" parent="1" name="app_users"/>
+      <column id="7" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <key id="7" parent="2" name="PRIMARY">
+      <column id="8" parent="2" name="action">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <key id="9" parent="2" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="8" parent="3" name="version">
+      <column id="10" parent="3" name="version">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <key id="9" parent="3" name="PRIMARY">
+      <key id="11" parent="3" name="PRIMARY">
         <columns>version</columns>
         <primary>1</primary>
       </key>
-      <column id="10" parent="4" name="id">
+      <column id="12" parent="4" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="11" parent="4" name="story">
+      <column id="13" parent="4" name="story">
         <mandatory>1</mandatory>
         <data-type>longtext</data-type>
       </column>
-      <key id="12" parent="4" name="PRIMARY">
+      <key id="14" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="13" parent="5" name="id">
+      <column id="15" parent="5" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="14" parent="5" name="sujet">
+      <column id="16" parent="5" name="sujet">
         <mandatory>1</mandatory>
-        <data-type>longtext</data-type>
+        <data-type>varchar(100)</data-type>
       </column>
-      <key id="15" parent="5" name="PRIMARY">
+      <key id="17" parent="5" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
+      </key>
+      <column id="18" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="19" parent="6" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="20" parent="6" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="21" parent="6" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="22" parent="6" name="is_active">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <index id="23" parent="6" name="UNIQ_C2502824E7927C74">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="24" parent="6" name="UNIQ_C2502824F85E0677">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="25" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="26" parent="6" name="UNIQ_C2502824E7927C74">
+        <columns>email</columns>
+        <underlying-index>UNIQ_C2502824E7927C74</underlying-index>
+      </key>
+      <key id="27" parent="6" name="UNIQ_C2502824F85E0677">
+        <columns>username</columns>
+        <underlying-index>UNIQ_C2502824F85E0677</underlying-index>
       </key>
     </database-model>
   </data-source>

@@ -1,14 +1,23 @@
 security:
+    encoders:
+        App\Entity\User:
+            algorithm: bcrypt
+        Symfony\Component\Security\Core\User\User: bcrypt
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
+        chain_provider:
+            chain:
+                provider: [ db ,  in_memory ]
+        db:
+            entity:
+                class: App\Entity\User
+                property: username
         in_memory:
-          memory:
-            users:
-              admin:
-                password: admin
-                roles:  'ROLE_ADMIN'
-    encoders:
-      Symfony\Component\Security\Core\User\User: plaintext
+            memory:
+                users:
+                    admin2:
+                        password: $2a$08$jHZj/wJfcVKlIwr5AvR78euJxYK7Ku5kURNhNx.7.CSIJ3Pq6LEPC
+                        roles:  'ROLE_ADMIN'
 
     firewalls:
         dev:
@@ -16,10 +25,11 @@ security:
             security: false
         main:
             anonymous: ~
+            http_basic: ~
+            provider: chain_provider
             form_login:
               login_path: login
               check_path: login
-            http_basic: ~
             logout:
                 path: /logout
                 target: /
