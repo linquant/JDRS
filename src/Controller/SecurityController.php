@@ -1,9 +1,12 @@
 <?php
 namespace App\Controller;
 
+use App\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\HttpFoundation\Request;
+
+use App\Form\UserType;
 
 
 class SecurityController extends Controller
@@ -22,6 +25,22 @@ class SecurityController extends Controller
             'last_username' => $lastUsername,
             'error'         => $error,
         ));
+
+    }
+
+    public function sign(Request $request){
+
+        //Génération du formulaire de création de compte
+        $form = $this->createForm(UserType::class, new User());
+
+
+        //récupéartion des doonées du formulaire
+
+       // $form->handleRequest($request);
+
+
+
+        return $this->render('sign.html.twig', array('form' => $form->createView()));
 
     }
 

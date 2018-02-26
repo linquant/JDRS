@@ -47,3 +47,7 @@ login:
 
 logout:
     path: /logout
+
+sign:
+  path: /creer-compte
+  controller : App\Controller\SecurityController::sign

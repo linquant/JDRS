@@ -66,6 +66,22 @@ class User implements UserInterface, \Serializable
         return array('ROLE_USER');
     }
 
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
     public function eraseCredentials()
     {
     }
