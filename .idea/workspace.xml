@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9456c39-0615-47dd-9e45-4ea3406f7245" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/admin/login.html.twig" afterPath="$PROJECT_DIR$/templates/login.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/GameController.php" afterPath="$PROJECT_DIR$/src/Controller/GameController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/User.php" afterPath="$PROJECT_DIR$/src/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" afterPath="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sign.html.twig" afterPath="$PROJECT_DIR$/templates/sign.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menu.html.twig" afterPath="$PROJECT_DIR$/templates/menu.html.twig" />
     </list>
     <ignored path="jdrs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecurityController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6991979">
+            <state vertical-scroll-proportion="-21.791666">
               <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
               <folding>
                 <element signature="e#33#53#0#PHP" expanded="true" />
@@ -111,6 +105,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.5">
               <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5864662">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -157,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/Form/Usertype.php" />
         <option value="$PROJECT_DIR$/src/Entity/ExchangeUserRoleplay.php" />
         <option value="$PROJECT_DIR$/src/Entity/Roleplay.php" />
-        <option value="$PROJECT_DIR$/templates/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/RoleplayController.php" />
         <option value="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" />
         <option value="$PROJECT_DIR$/src/Controller/GameController.php" />
@@ -166,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
+        <option value="$PROJECT_DIR$/templates/menu.html.twig" />
       </list>
     </option>
   </component>
@@ -341,7 +345,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="menu&#9;FILE&#9;file:///var/www/jdrs/templates/menu.html.twig&#10;rout&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;rou&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;user&#9;FILE&#9;file:///var/www/jdrs/src/Entity/User.php&#10;twi&#9;FILE&#9;file:///var/www/jdrs/templates/game.html.twig&#10;gam&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;secu&#9;FILE&#9;file:///var/www/jdrs/src/Controller/SecurityController.php&#10;route&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;userRe&#9;null&#9;null&#10;dev&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;lo&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;sec&#9;FILE&#9;file:///var/www/jdrs/config/packages/security.yaml&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;querybuild&#9;null&#9;null&#10;Game&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;style&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;kern&#9;null&#9;null&#10;sty&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;ba&#9;FILE&#9;file:///var/www/jdrs/templates/base.html.twig&#10;st&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css" />
+    <property name="SearchEverywhereHistoryKey" value="term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;menu&#9;FILE&#9;file:///var/www/jdrs/templates/menu.html.twig&#10;rout&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;rou&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;user&#9;FILE&#9;file:///var/www/jdrs/src/Entity/User.php&#10;twi&#9;FILE&#9;file:///var/www/jdrs/templates/game.html.twig&#10;gam&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;secu&#9;FILE&#9;file:///var/www/jdrs/src/Controller/SecurityController.php&#10;route&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;userRe&#9;null&#9;null&#10;dev&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;lo&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;sec&#9;FILE&#9;file:///var/www/jdrs/config/packages/security.yaml&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;querybuild&#9;null&#9;null&#10;Game&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;style&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;kern&#9;null&#9;null&#10;sty&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;ba&#9;FILE&#9;file:///var/www/jdrs/templates/base.html.twig&#10;st&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -411,7 +415,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47506234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4351621" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4351621" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -785,14 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RoleplayController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -847,11 +843,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6991979">
+        <state vertical-scroll-proportion="-21.791666">
           <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
           <folding>
             <element signature="e#33#53#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5864662">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
