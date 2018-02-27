@@ -9,15 +9,17 @@
 {% block title %}Connexion à JDRS{% endblock %}
  {% block body %}
 
-     <h1>Connectez-vous</h1>
+
      {% if error %}
          <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
      {% endif %}
 
 
 
-<div class="row justify-content-center">
+<div class="row justify-content-center cadre">
     <div class="">
+        <h1>Connectez-vous</h1>
+
     <form action="{{ path('login') }}" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="_username" value="{{ last_username }}" />
@@ -33,6 +35,11 @@
 
         <button type="submit">login</button>
     </form>
+        <ul>
+            <li>  <a href="{{ path('sign') }}">Vous n'avez pas de compte</a></li>
+            {#<li>  <a href="{{ path('sign') }}">Mot de passe oublié</a></li>#}
+
+        </ul>
     </div>
 </div>
 
