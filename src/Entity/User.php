@@ -37,7 +37,6 @@ class User implements UserInterface, \Serializable
      */
     private $isActive;
 
-
     /**
     /* @ORM\OneToMany(targetEntity="App\Entity\Roleplay", mappedBy="User")
     */
@@ -50,9 +49,29 @@ class User implements UserInterface, \Serializable
         // $this->salt = md5(uniqid('', true));
     }
 
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
     public function getUsername()
     {
         return $this->username;
+    }
+
+    /**
+     * @param mixed $username
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
     }
 
     public function getSalt()
@@ -67,22 +86,26 @@ class User implements UserInterface, \Serializable
         return $this->password;
     }
 
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
     public function getRoles()
     {
         return array('ROLE_USER');
     }
 
-    /**
-     * @return mixed
-     */
+
     public function getEmail()
     {
         return $this->email;
     }
 
-    /**
-     * @param mixed $email
-     */
+
     public function setEmail($email)
     {
         $this->email = $email;

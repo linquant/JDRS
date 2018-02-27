@@ -92,10 +92,13 @@ class GameController extends roleplayController
 
     public function page_list_roleplay(){
 
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+        $user_id = $this->getUser()->getId();
+
           $repo = $this->getDoctrine()->getManager()->getRepository(Roleplay::class);
 
 //        $list = $repo->findAll();
-        $list = $repo->list_roleplay_by_userId();
+        $list = $repo->list_roleplay_by_userId($user_id);
 
 
 
