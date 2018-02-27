@@ -22,10 +22,10 @@ class GameController extends roleplayController
     public function Game(Request $request,$id)
     {
 
-    echo $this->random_scenario();
 
         //Initialise un nouveau jeu ou charge depuis un Id
         //ToDo sécuriser les acces à l'id
+
 
         if  ($id == 0){
 
@@ -37,7 +37,10 @@ class GameController extends roleplayController
 
         }else{
 
-            $roleplay = $this->read_roleplay($id);
+            $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+            $user_id = $this->getUser()->getId();
+
+            $roleplay = $this->read_roleplay($id,$user_id);
 
 
         }

@@ -37,7 +37,7 @@ class RoleplayController extends Controller
 
 
     }
-    public function read_roleplay($id){
+    public function read_roleplay($id,$used_id){
 
 
         $Roleplay = $this->getDoctrine()
@@ -51,6 +51,16 @@ class RoleplayController extends Controller
 
 
         }
+
+       //Controle  que l'id de l'utisateur soit identique à celui  du roleplay
+        if ($Roleplay->getUser()->GetId() != $used_id){
+
+            throw $this->createNotFoundException(
+                'Vous n\'êtes pas autorisé à consulter cette story '
+            );
+
+        }
+
         return $Roleplay;
     }
     public function update_roleplay($id,$story){

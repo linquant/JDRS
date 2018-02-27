@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9456c39-0615-47dd-9e45-4ea3406f7245" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/UserType.php" afterPath="$PROJECT_DIR$/src/Form/UserType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html.twig" afterPath="$PROJECT_DIR$/templates/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sign.html.twig" afterPath="$PROJECT_DIR$/templates/sign.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/GameController.php" afterPath="$PROJECT_DIR$/src/Controller/GameController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/RoleplayController.php" afterPath="$PROJECT_DIR$/src/Controller/RoleplayController.php" />
     </list>
     <ignored path="jdrs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +56,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
+      <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/GameController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6165414">
-              <caret line="43" column="51" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="51" />
+            <state vertical-scroll-proportion="20.875">
+              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+              <folding>
+                <element signature="e#33#68#0#PHP" expanded="true" />
+                <element signature="e#2596#2675#0#PHP" expanded="false" />
+                <element signature="e#2681#2960#0#PHP" expanded="false" />
+                <element signature="e#2967#3252#0#PHP" expanded="false" />
+                <element signature="e#3491#3654#0#PHP" expanded="false" />
+                <element signature="e#3660#3845#0#PHP" expanded="false" />
+                <element signature="e#3851#4385#0#PHP" expanded="false" />
+                <marker date="1519762929856" expanded="true" signature="1442:1455" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleplayController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/RoleplayController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.62406015">
+              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Roleplay.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Roleplay.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.75">
+              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,9 +132,7 @@
         <option value="$PROJECT_DIR$/src/Form/Usertype.php" />
         <option value="$PROJECT_DIR$/src/Entity/ExchangeUserRoleplay.php" />
         <option value="$PROJECT_DIR$/src/Entity/Roleplay.php" />
-        <option value="$PROJECT_DIR$/src/Controller/RoleplayController.php" />
         <option value="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" />
-        <option value="$PROJECT_DIR$/src/Controller/GameController.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/templates/menu.html.twig" />
@@ -120,6 +144,8 @@
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/Form/UserType.php" />
         <option value="$PROJECT_DIR$/templates/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/GameController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/RoleplayController.php" />
       </list>
     </option>
   </component>
@@ -163,35 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jdrs">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jdrs">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="templates">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,18 +263,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdrs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdrs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jdrs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jdrs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="templates">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="sty&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;menu&#9;FILE&#9;file:///var/www/jdrs/templates/menu.html.twig&#10;rout&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;rou&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;user&#9;FILE&#9;file:///var/www/jdrs/src/Entity/User.php&#10;twi&#9;FILE&#9;file:///var/www/jdrs/templates/game.html.twig&#10;gam&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;secu&#9;FILE&#9;file:///var/www/jdrs/src/Controller/SecurityController.php&#10;route&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;userRe&#9;null&#9;null&#10;dev&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;lo&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;sec&#9;FILE&#9;file:///var/www/jdrs/config/packages/security.yaml&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;querybuild&#9;null&#9;null&#10;Game&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;style&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;kern&#9;null&#9;null&#10;ba&#9;FILE&#9;file:///var/www/jdrs/templates/base.html.twig&#10;st&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css" />
+    <property name="SearchEverywhereHistoryKey" value="rol&#9;FILE&#9;file:///var/www/jdrs/src/Entity/Roleplay.php&#10;sty&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;menu&#9;FILE&#9;file:///var/www/jdrs/templates/menu.html.twig&#10;rout&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;rou&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;user&#9;FILE&#9;file:///var/www/jdrs/src/Entity/User.php&#10;twi&#9;FILE&#9;file:///var/www/jdrs/templates/game.html.twig&#10;gam&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;secu&#9;FILE&#9;file:///var/www/jdrs/src/Controller/SecurityController.php&#10;route&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;userRe&#9;null&#9;null&#10;dev&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;lo&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;sec&#9;FILE&#9;file:///var/www/jdrs/config/packages/security.yaml&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;querybuild&#9;null&#9;null&#10;Game&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;style&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;kern&#9;null&#9;null&#10;ba&#9;FILE&#9;file:///var/www/jdrs/templates/base.html.twig&#10;st&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -344,7 +388,6 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29198965" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21985815" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47506234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4351621" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -355,6 +398,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24951644" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47506234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -401,7 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,23 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.75">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-          <folding>
-            <element signature="e#33#68#0#PHP" expanded="true" />
-            <element signature="e#2465#2544#0#PHP" expanded="false" />
-            <element signature="e#2550#2829#0#PHP" expanded="false" />
-            <element signature="e#2836#3121#0#PHP" expanded="false" />
-            <element signature="e#3360#3523#0#PHP" expanded="false" />
-            <element signature="e#3529#3714#0#PHP" expanded="false" />
-            <element signature="e#3720#4254#0#PHP" expanded="false" />
-            <marker date="1519749338882" expanded="true" signature="1311:1324" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/RoleplayRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -662,29 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Roleplay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/RoleplayController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#33#92#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.666666">
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-39.375">
           <caret line="72" column="89" selection-start-line="72" selection-start-column="89" selection-end-line="72" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,9 +738,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.255639">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <marker date="1519750437858" expanded="true" signature="1721:1751" placeholder="{% block body ...%}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61141306">
           <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5338346">
           <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,6 +791,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6165414">
           <caret line="43" column="51" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Roleplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.75">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="20.875">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding>
+            <element signature="e#33#68#0#PHP" expanded="true" />
+            <element signature="e#2596#2675#0#PHP" expanded="false" />
+            <element signature="e#2681#2960#0#PHP" expanded="false" />
+            <element signature="e#2967#3252#0#PHP" expanded="false" />
+            <element signature="e#3491#3654#0#PHP" expanded="false" />
+            <element signature="e#3660#3845#0#PHP" expanded="false" />
+            <element signature="e#3851#4385#0#PHP" expanded="false" />
+            <marker date="1519762929856" expanded="true" signature="1442:1455" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/RoleplayController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62406015">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding />
         </state>
       </provider>
