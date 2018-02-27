@@ -94,7 +94,9 @@ class GameController extends roleplayController
 
           $repo = $this->getDoctrine()->getManager()->getRepository(Roleplay::class);
 
-        $list = $repo->findAll();
+//        $list = $repo->findAll();
+        $list = $repo->list_roleplay_by_userId();
+
 
 
 

@@ -39,4 +39,18 @@ class RoleplayRepository extends ServiceEntityRepository
         // returns an array of arrays (i.e. a raw data set)
         return $stmt->fetchAll();
     }
+
+    public function list_roleplay_by_userId(){
+
+        $conn = $this->getEntityManager()->getConnection();
+
+        $sql = '
+        SELECT * FROM roleplay WHERE user_id = 1
+        ';
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+
+        // returns an array of arrays (i.e. a raw data set)
+        return $stmt->fetchAll();
+    }
 }

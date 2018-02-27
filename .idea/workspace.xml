@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9456c39-0615-47dd-9e45-4ea3406f7245" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/RoleplayController.php" afterPath="$PROJECT_DIR$/src/Controller/RoleplayController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Roleplay.php" afterPath="$PROJECT_DIR$/src/Entity/Roleplay.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/GameController.php" afterPath="$PROJECT_DIR$/src/Controller/GameController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" afterPath="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/menu.html.twig" afterPath="$PROJECT_DIR$/templates/menu.html.twig" />
     </list>
     <ignored path="jdrs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,6 +57,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/GameController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="5.109091">
+              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding>
+                <element signature="e#2344#2423#0#PHP" expanded="false" />
+                <element signature="e#2429#2708#0#PHP" expanded="false" />
+                <element signature="e#2715#3000#0#PHP" expanded="false" />
+                <element signature="e#3239#3402#0#PHP" expanded="false" />
+                <element signature="e#3408#3593#0#PHP" expanded="false" />
+                <element signature="e#3599#4133#0#PHP" expanded="false" />
+                <marker date="1519738203249" expanded="true" signature="1311:1324" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/ActionRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.75">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <folding>
+                <marker date="1519241546492" expanded="true" signature="487:514" placeholder="SELECT COUNT... action" />
+                <marker date="1519241546492" expanded="true" signature="899:939" placeholder="SELECT actio... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleplayRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Repository/RoleplayRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6616541">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+              <folding>
+                <marker date="1519738698082" expanded="true" signature="814:836" placeholder="SELECT * FRO... roleplay" />
+                <marker date="1519738698082" expanded="true" signature="1148:1188" placeholder="SELECT * FRO... roleplay" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Roleplay.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Roleplay.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,10 +111,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleplayController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.125">
+              <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleplayController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/RoleplayController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.97744364">
+            <state vertical-scroll-proportion="-6.875">
               <caret line="26" column="45" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="45" />
               <folding>
                 <element signature="e#33#92#0#PHP" expanded="true" />
@@ -98,7 +163,6 @@
         <option value="$PROJECT_DIR$/templates/game.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/SujetController.php" />
         <option value="$PROJECT_DIR$/src/Repository/SujetRepository.php" />
-        <option value="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" />
         <option value="$PROJECT_DIR$/templates/home.html.twig" />
         <option value="$PROJECT_DIR$/templates/listgame.html.twig" />
         <option value="$PROJECT_DIR$/src/Repository/ActionRepository.php" />
@@ -106,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/Entity/Sujet.php" />
         <option value="$PROJECT_DIR$/src/Form/Actiontype.php" />
         <option value="$PROJECT_DIR$/src/Form/Roleplaytype.php" />
-        <option value="$PROJECT_DIR$/src/Controller/GameController.php" />
         <option value="$PROJECT_DIR$/src/Form/Sujettype.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/addscenar.html.twig" />
@@ -123,11 +186,13 @@
         <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/src/Form/Usertype.php" />
         <option value="$PROJECT_DIR$/src/Form/UserType.php" />
-        <option value="$PROJECT_DIR$/templates/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/ExchangeUserRoleplay.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Entity/Roleplay.php" />
         <option value="$PROJECT_DIR$/src/Controller/RoleplayController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/GameController.php" />
+        <option value="$PROJECT_DIR$/templates/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/Repository/RoleplayRepository.php" />
       </list>
     </option>
   </component>
@@ -321,7 +386,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="rou&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;user&#9;FILE&#9;file:///var/www/jdrs/src/Entity/User.php&#10;twi&#9;FILE&#9;file:///var/www/jdrs/templates/game.html.twig&#10;gam&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;secu&#9;FILE&#9;file:///var/www/jdrs/src/Controller/SecurityController.php&#10;route&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;userRe&#9;null&#9;null&#10;dev&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;lo&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;sec&#9;FILE&#9;file:///var/www/jdrs/config/packages/security.yaml&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;querybuild&#9;null&#9;null&#10;Game&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;style&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;kern&#9;null&#9;null&#10;sty&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;ba&#9;FILE&#9;file:///var/www/jdrs/templates/base.html.twig&#10;st&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css" />
+    <property name="SearchEverywhereHistoryKey" value="menu&#9;FILE&#9;file:///var/www/jdrs/templates/menu.html.twig&#10;rout&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;rou&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;user&#9;FILE&#9;file:///var/www/jdrs/src/Entity/User.php&#10;twi&#9;FILE&#9;file:///var/www/jdrs/templates/game.html.twig&#10;gam&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;secu&#9;FILE&#9;file:///var/www/jdrs/src/Controller/SecurityController.php&#10;route&#9;FILE&#9;file:///var/www/jdrs/config/routes.yaml&#10;userRe&#9;null&#9;null&#10;dev&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;lo&#9;FILE&#9;file:///var/www/jdrs/var/log/dev.log&#10;sec&#9;FILE&#9;file:///var/www/jdrs/config/packages/security.yaml&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;querybuild&#9;null&#9;null&#10;Game&#9;FILE&#9;file:///var/www/jdrs/src/Controller/GameController.php&#10;style&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;kern&#9;null&#9;null&#10;sty&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css&#10;ba&#9;FILE&#9;file:///var/www/jdrs/templates/base.html.twig&#10;st&#9;FILE&#9;file:///var/www/jdrs/assets/css/style.css" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -379,7 +444,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="24" width="1551" height="876" extended-state="6" />
+    <frame x="49" y="24" width="1551" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -460,7 +525,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
-            <element signature="e#29#61#0#PHP" expanded="true" />
+            <element signature="e#29#61#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -469,6 +534,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -476,6 +542,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -617,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/RoleplayRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2396694">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/SujetRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625">
@@ -635,13 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/ActionRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -755,19 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/GameController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="e#2291#2370#0#PHP" expanded="false" />
-            <element signature="e#2376#2655#0#PHP" expanded="false" />
-            <element signature="e#2662#2947#0#PHP" expanded="false" />
-            <element signature="e#2953#3027#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -776,26 +816,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.98746866">
           <caret line="41" column="72" selection-start-line="41" selection-start-column="72" selection-end-line="41" selection-end-column="72" />
           <folding>
-            <element signature="e#29#61#0#PHP" expanded="true" />
+            <element signature="e#29#61#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,12 +834,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/ActionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <marker date="1519241546492" expanded="true" signature="487:514" placeholder="SELECT COUNT... action" />
+            <marker date="1519241546492" expanded="true" signature="899:939" placeholder="SELECT actio... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/RoleplayController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97744364">
+        <state vertical-scroll-proportion="-6.875">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="45" />
           <folding>
             <element signature="e#33#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.109091">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <element signature="e#2344#2423#0#PHP" expanded="false" />
+            <element signature="e#2429#2708#0#PHP" expanded="false" />
+            <element signature="e#2715#3000#0#PHP" expanded="false" />
+            <element signature="e#3239#3402#0#PHP" expanded="false" />
+            <element signature="e#3408#3593#0#PHP" expanded="false" />
+            <element signature="e#3599#4133#0#PHP" expanded="false" />
+            <marker date="1519738203249" expanded="true" signature="1311:1324" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/RoleplayRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6616541">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <marker date="1519738698082" expanded="true" signature="814:836" placeholder="SELECT * FRO... roleplay" />
+            <marker date="1519738698082" expanded="true" signature="1148:1188" placeholder="SELECT * FRO... roleplay" />
           </folding>
         </state>
       </provider>
