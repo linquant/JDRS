@@ -24,6 +24,7 @@ class RoleplayController extends Controller
 
         $Roleplay = new Roleplay();
         $Roleplay->setStory($story);
+        $Roleplay->setUser($this->getUser());
 
 
         // tell Doctrine you want to (eventually) save the Roleplay (no queries yet)
