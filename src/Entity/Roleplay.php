@@ -26,6 +26,11 @@ class Roleplay
     private $story;
 
     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="roleplay")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private  $user;
+    /**
      * @return mixed
      */
 
