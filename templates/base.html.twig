@@ -14,7 +14,7 @@
 
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-        //TODO charger uniquement sur les pages nécessitant un texte enrichi
+        {#TODO charger uniquement sur les pages nécessitant un texte enrichi#}
         <script src="/tinymce/js/tinymce/tinymce.min.js"></script>
         <script>tinymce.init({
                 selector:'textarea',
@@ -37,18 +37,22 @@
             {% block slide %}
                 {% include 'slide.html.twig' %}
             {% endblock %}
+
+
             {# pass a string argument to get only the messages of that type #}
             {% for message in app.flashes('notice') %}
-                <div class="alert alert-notice">
+                <div class="bg-primary">
                     {{ message }}
                 </div>
             {% endfor %}
 
 
 
-                {% block body %}{% endblock %}
-                {% include 'footer.html.twig' %}
-                {% block javascripts %}{% endblock %}
+            {% block body %}{% endblock %}
+
+            {% include 'footer.html.twig' %}
+
+            {% block javascripts %}{% endblock %}
 
         </div>
     </body>
