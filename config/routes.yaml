@@ -36,8 +36,8 @@ app_add_scenar:
 
 
 app_test:
-  path: /test
-  controller: App\Controller\SujetController::count _sujet
+  path: /import
+  controller: App\Controller\ImportController::import
 
 
 ## Gestion des users
