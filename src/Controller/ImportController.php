@@ -12,6 +12,15 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use App\Entity\Sujet;
 use App\Entity\Action;
+use Symfony\Component\Form\AbstractType;
+
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+
+use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class ImportController extends Controller
 {
@@ -19,8 +28,25 @@ class ImportController extends Controller
   
     public function import(){
 
-        return $this->render('import.html.twig');
+        $defaultData = array('message' => 'Type your message here');
+        $form = $this->createFormBuilder($defaultData)
+            ->add('Fichier', FileType::class ,array('label' => 'Fichier (CSV file)'))
+            ->add('liste', ChoiceType::class, array(
+            'choices' => array(
+                'Action' => 'Action',
+                'Sujet' => 'Sujet',
+            ),))
+            ->add('Send', SubmitType::class)
+            ->getForm()->createView();
 
+
+//        if ($form->isSubmitted() && $form->isValid()) {
+//            // data is an array with "name", "email", and "message" keys
+//            $data = $form->getData();
+//        }
+
+
+        return $this->render('import.html.twig',array('form' => $form));
     }
 
     public function open(){
