@@ -16,8 +16,6 @@ class Roleplay
      */
     private $id;
 
-    // add your own fields
-
 
     /**
      *

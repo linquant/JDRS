@@ -26,19 +26,7 @@
 
          {{ form_start(form) }}
 
-                 <div class="row">
-                     <div class="col-8 ">
-                         {{ form_label(form.question,'Question') }}
-                         {{ form_errors(form.question) }}
-                         {{ form_widget(form.question) }}
-                     </div>
 
-                     <div class="col-4 ">
-                         {{ form_label(form.diff, 'difficulté') }}
-                        {{ form_errors(form.diff) }}
-                        {{ form_widget(form.diff) }}
-                     </div>
-                 </div>
                  <div class="row">
                      <div class="col-12 ">
                         {{ form_label(form.action, 'Roleplay    ') }}
@@ -46,6 +34,16 @@
                         {{ form_widget(form.action) }}
                     </div>
                  </div>
+
+            <div class="row">
+
+                <div class="col-4 ">
+                    {{ form_label(form.diff, 'Difficulté') }}
+                    {{ form_errors(form.diff) }}
+                    {{ form_widget(form.diff) }}
+                </div>
+
+            </div>
 
          {{ form_end(form) }}
      </div>

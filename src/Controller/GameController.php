@@ -57,35 +57,25 @@ class GameController extends roleplayController
 
 
             $reponse = $form->getData();
-
-
-
-            if($reponse->getquestion()){
-
-
-                $retour = '<p class="question" style="color: orange"> question :'.$reponse->getquestion() .'<br> reponse :' .$this->ouinon($reponse->getdiff()).'</p>';
-
-                $story= $roleplay->getStory(). $retour;
-
-
-
-                return $this->redirectToRoute('app_game', array('id' =>  $this->save($story,$id)));
-
-            }
+            $story ="";
 
             if($reponse->getaction()){
 
 
                 $retour = $reponse->getaction();
 
-                $story= $roleplay->getStory().'<br>' .$retour .'<br>'.$this->twist();
-
-
-
-                return $this->redirectToRoute('app_game', array('id' =>  $this->save($story,$id)));
+                $story= $roleplay->getStory().' ' .$retour .' '.$this->twist();
 
             }
+            if($reponse->getdiff()){
 
+
+                $retour = 'Reponse :' .$this->ouinon($reponse->getdiff());
+
+                $story= $story.$roleplay->getStory(). $retour;
+
+            }
+            return $this->redirectToRoute('app_game', array('id' =>  $this->save($story,$id)));
 
         }
 
@@ -154,10 +144,10 @@ class GameController extends roleplayController
     public function ouinon($diff){
 
         if ( $this->des(10) >= $diff){
-            return 'oui';
+            return 'oui <br>';
         }
         else{
-            return "Non";
+            return "Non <br>";
         }
 
     }
@@ -165,8 +155,8 @@ class GameController extends roleplayController
     public function twist()
     {
 
-//        if ($this->des(10) == $this->des(10)) {
-        if (true) {
+        if ($this->des(10) == $this->des(10)) {
+//        if (true) {
 
             return "Un évenement se produit :".$this->list_twit();
 
@@ -181,10 +171,7 @@ class GameController extends roleplayController
                         ' Agression',
                         ' Evenement anodin',
                         ' Vous trouvez un objet',
-                        ' Num 7',
-                        ' Num 8',
-                        ' Num 9',
-                        ' Num 10',
+
         ] ;
         return $list_twist[array_rand($list_twist, 1)];
     }
