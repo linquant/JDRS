@@ -9,6 +9,7 @@ Encore
 
     // will create public/build/app.js and public/build/app.css
     .addEntry('app', './assets/css/style.css')
+    .addEntry('gamejs', './assets/js/gameeffect.js')
 
     // allow sass/scss files to be processed
     .enableSassLoader()
