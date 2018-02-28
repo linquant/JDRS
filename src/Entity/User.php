@@ -38,6 +38,11 @@ class User implements UserInterface, \Serializable
     private $isActive;
 
     /**
+     * @ORM\Column(type="string", length=60, unique=false)
+     */
+    private $roles;
+
+    /**
     /* @ORM\OneToMany(targetEntity="App\Entity\Roleplay", mappedBy="User")
     */
     private $roleplay;
@@ -45,6 +50,7 @@ class User implements UserInterface, \Serializable
     public function __construct()
     {
         $this->isActive = true;
+        $this->setRoles('ROLE_USER');
         // may not be needed, see section on salt below
         // $this->salt = md5(uniqid('', true));
     }
@@ -96,7 +102,14 @@ class User implements UserInterface, \Serializable
 
     public function getRoles()
     {
-        return array('ROLE_USER');
+        $array_role= [$this->roles];
+
+        return $array_role;
+    }
+
+    public function setRoles($role)
+    {
+        $this->roles = $role;
     }
 
 

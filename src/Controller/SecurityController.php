@@ -56,7 +56,7 @@ class SecurityController extends Controller
             // maybe set a "flash" success message for the user
 
             $flashbag = $this->get('session')->getFlashBag();
-            $flashbag->add('notice', 'Votre inscription est terminée');
+            $flashbag->add('notice  ', 'Votre inscription est terminée');
 
             return $this->redirectToRoute('app_home');
         }
