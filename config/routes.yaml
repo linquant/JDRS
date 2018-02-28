@@ -35,8 +35,8 @@ app_add_scenar:
 
 
 
-app_test:
-  path: /import
+app_import:
+  path: /admin/import
   controller: App\Controller\ImportController::import
 
 

@@ -58,6 +58,7 @@ class ImportController extends Controller
 
 
             $this->write_db(strtolower( $data['liste']),$this->open($data['Fichier']));
+
         }
 
 
