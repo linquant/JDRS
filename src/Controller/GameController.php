@@ -62,17 +62,17 @@ class GameController extends roleplayController
             if($reponse->getaction()){
 
 
-                $retour = $reponse->getaction();
-
-                $story= $roleplay->getStory().' ' .$retour .' '.$this->twist();
-
+                $story= $roleplay->getStory().' ' .$reponse->getaction() .' '.$this->twist();
+                $roleplay->setStory($story);
             }
             if($reponse->getdiff()){
 
 
-                $retour = 'Reponse :' .$this->ouinon($reponse->getdiff());
+                $retour = $this->ouinon($reponse->getdiff());
 
-                $story= $story.$roleplay->getStory(). $retour;
+
+                $story= $roleplay->getStory(). $retour;
+
 
             }
             return $this->redirectToRoute('app_game', array('id' =>  $this->save($story,$id)));
@@ -144,10 +144,10 @@ class GameController extends roleplayController
     public function ouinon($diff){
 
         if ( $this->des(10) >= $diff){
-            return 'oui <br>';
+            return '<p style="color:green">Réponse : oui</p> ';
         }
         else{
-            return "Non <br>";
+            return "<p style=\"color:red\">Réponse : Non </p>";
         }
 
     }
@@ -155,7 +155,7 @@ class GameController extends roleplayController
     public function twist()
     {
 
-        if ($this->des(10) == $this->des(10)) {
+        if ($this->des(100) < 10) {
 //        if (true) {
 
             return "Un évenement se produit :".$this->list_twit();
@@ -165,11 +165,10 @@ class GameController extends roleplayController
 
     public function list_twit(){
 
-        $list_twist = [ 'piège',
+        $list_twist = [ 'Vous tomber sur un piège',
                         ' Vous faites la connaissance d\'une nouvelle personne',
-                        ' Changement de lieu',
-                        ' Agression',
-                        ' Evenement anodin',
+                        ' Un événement vous fait changer de lieu',
+                        ' Un personnage vous aggresse',
                         ' Vous trouvez un objet',
 
         ] ;
